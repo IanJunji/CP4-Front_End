@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Required meta tags -->
+    <!-- Tags meta necessárias pra página não bugar -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS do Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- Bootstrap Icons -->
+    <!-- Ícones do Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
 
-    <!-- Google Fonts -->
+    <!-- Fontes do Google -->
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <title>Meu Portfólio Tech</title>
+    <title>Meu Portfólio</title>
   </head>
   <body class="bg-dark text-light">
-    <!-- Navbar -->
+    <!-- Barra de navegação top -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-90"
     >
       <div class="container">
-        <a class="navbar-brand font-monospace" href="#">
-          &lt;devSeuNome /&gt;
-        </a>
+        <a class="navbar-brand font-monospace" href="#"> &lt;devIan/&gt; </a>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -60,7 +58,7 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="#projetos">Projetos</a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-2 d-flex align-items-center">
               <a class="btn btn-primary btn-sm rounded-3" href="#contato"
                 >Contato</a
               >
@@ -70,7 +68,7 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Parte principal da página com minha foto -->
     <section
       id="inicio"
       class="min-vh-100 d-flex align-items-center bg-dark text-white"
@@ -105,7 +103,7 @@
                 <div class="text-center">
                   <img
                     src="sua-foto.jpg"
-                    alt="Seu Nome"
+                    alt="Ian Junji"
                     class="img-fluid border border-primary rounded-circle"
                     style="width: 180px; height: 180px; object-fit: cover"
                   />
@@ -121,12 +119,14 @@
               >Olá, mundo! 👋</span
             >
             <h1 class="display-3 fw-bold">
-              Eu sou <span class="text-primary">Seu Nome</span>
+              Eu sou <span class="text-primary">Ian Junji</span>
             </h1>
-            <h2 class="h3 mb-4 text-secondary">Engenheiro de Software</h2>
+            <h2 class="h3 mb-4 text-secondary">
+              Desenvolvedor Backend & Automação
+            </h2>
             <p class="lead mb-4">
-              Transformando ideias em soluções inovadoras através de código
-              limpo e arquitetura elegante.
+              Especialista em automação, processamento de dados e
+              desenvolvimento de ferramentas para engenharia civil.
             </p>
             <div class="d-flex flex-wrap gap-3">
               <a
@@ -149,7 +149,7 @@
       </div>
     </section>
 
-    <!-- Sobre Section -->
+    <!-- Sobre mim -->
     <section id="sobre" class="py-5 bg-light text-dark">
       <div class="container py-5">
         <div class="row">
@@ -160,35 +160,38 @@
               Sobre Mim
             </h2>
             <p class="lead mb-4">
-              Desenvolvedor full-stack apaixonado por criar soluções
-              tecnológicas elegantes e eficientes.
+              Desenvolvedor especializado em automação e ferramentas para
+              engenharia civil e análise de dados.
             </p>
             <p class="mb-4">
-              Tenho experiência com desenvolvimento de aplicações web e mobile,
-              utilizando tecnologias modernas e boas práticas de programação.
-              Meu objetivo é construir software que não apenas resolva
-              problemas, mas também ofereça uma experiência excepcional ao
-              usuário.
+              Tenho experiência com desenvolvimento de scripts e ferramentas que
+              otimizam processos em engenharia, desde extração e processamento
+              de dados de arquivos PDF até a criação de soluções para detecção
+              de interferências em projetos CAD e automação de elementos 3D no
+              Civil 3D. Meu principal foco é aplicar conhecimentos técnicos para
+              resolver problemas práticos do dia a dia.
             </p>
             <div class="d-flex flex-wrap gap-2 mb-4">
-              <span class="badge bg-secondary rounded-pill px-3 py-2"
-                >JavaScript</span
-              >
-              <span class="badge bg-secondary rounded-pill px-3 py-2"
-                >React</span
-              >
-              <span class="badge bg-secondary rounded-pill px-3 py-2"
-                >Node.js</span
-              >
               <span class="badge bg-secondary rounded-pill px-3 py-2"
                 >Python</span
               >
               <span class="badge bg-secondary rounded-pill px-3 py-2"
-                >Java</span
+                >AutoLISP</span
               >
-              <span class="badge bg-secondary rounded-pill px-3 py-2">SQL</span>
               <span class="badge bg-secondary rounded-pill px-3 py-2"
-                >Docker</span
+                >Dynamo</span
+              >
+              <span class="badge bg-secondary rounded-pill px-3 py-2"
+                >Civil 3D</span
+              >
+              <span class="badge bg-secondary rounded-pill px-3 py-2"
+                >AutoCAD</span
+              >
+              <span class="badge bg-secondary rounded-pill px-3 py-2"
+                >Pandas</span
+              >
+              <span class="badge bg-secondary rounded-pill px-3 py-2"
+                >PDF Processing</span
               >
             </div>
             <a
@@ -207,37 +210,42 @@
 
                 <div class="mb-4 pb-4 border-bottom">
                   <div class="d-flex justify-content-between mb-2">
-                    <h4 class="h5 mb-1">Desenvolvedor Full Stack</h4>
-                    <span class="badge bg-dark">2021 - Presente</span>
+                    <h4 class="h5 mb-1">Desenvolvedor de Automação</h4>
+                    <span class="badge bg-dark">2025 - Presente</span>
                   </div>
-                  <p class="text-secondary mb-2">Empresa XYZ Tech</p>
+                  <p class="text-secondary mb-2">Canhedo-Beppu</p>
                   <p class="mb-0">
-                    Desenvolvimento de aplicações web escaláveis, implementação
-                    de APIs RESTful, e otimização de performance.
+                    Desenvolvimento de ferramentas de automação para
+                    processamento de dados e geração de relatórios. Criação de
+                    scripts para extração de informações de PDFs e organização
+                    em planilhas estruturadas.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-4 border-bottom">
                   <div class="d-flex justify-content-between mb-2">
-                    <h4 class="h5 mb-1">Desenvolvedor Front-end</h4>
-                    <span class="badge bg-dark">2019 - 2021</span>
+                    <h4 class="h5 mb-1">Programador CAD</h4>
+                    <span class="badge bg-dark">2024</span>
                   </div>
-                  <p class="text-secondary mb-2">Startup ABC</p>
+                  <p class="text-secondary mb-2">Canhedo-Beppu</p>
                   <p class="mb-0">
-                    Criação de interfaces responsivas e acessíveis,
-                    implementação de animações e interações para melhorar UX.
+                    Desenvolvimento de ferramentas para detecção de
+                    interferências em projetos CAD. Implementação de rotinas em
+                    AutoLISP para visualização e gestão de problemas em modelos
+                    3D.
                   </p>
                 </div>
 
                 <div>
                   <div class="d-flex justify-content-between mb-2">
-                    <h4 class="h5 mb-1">Estágio em Desenvolvimento</h4>
-                    <span class="badge bg-dark">2018 - 2019</span>
+                    <h4 class="h5 mb-1">Estagiário em BIM</h4>
+                    <span class="badge bg-dark">2024</span>
                   </div>
-                  <p class="text-secondary mb-2">Tech Solutions Inc.</p>
+                  <p class="text-secondary mb-2">Canhedo-Beppu</p>
                   <p class="mb-0">
-                    Suporte ao desenvolvimento de aplicativos mobile e
-                    implementação de funcionalidades em sistemas existentes.
+                    Suporte ao desenvolvimento de soluções BIM e aprendizado de
+                    programação Dynamo para Civil 3D. Implementação de
+                    automações para geração de elementos de infraestrutura.
                   </p>
                 </div>
               </div>
@@ -247,7 +255,7 @@
       </div>
     </section>
 
-    <!-- Habilidades Section -->
+    <!-- Habilidades de programador backend -->
     <section id="habilidades" class="py-5 bg-dark text-white">
       <div class="container py-5">
         <div class="row justify-content-center mb-5">
@@ -267,87 +275,18 @@
         </div>
 
         <div class="row g-4">
-          <!-- Frontend -->
-          <div class="col-md-4">
+          <!-- Linguagens de Programação -->
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100 bg-dark text-white border-secondary">
               <div class="card-body p-4">
                 <div class="d-flex align-items-center mb-4">
                   <div
-                    class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
-                    style="width: 60px; height: 60px"
+                    class="bg-info bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                    style="width: 60px; height: 60px; min-width: 60px"
                   >
-                    <i class="bi bi-window text-primary fs-3"></i>
+                    <i class="bi bi-code-slash text-info fs-3"></i>
                   </div>
-                  <h3 class="h4 mb-0">Frontend</h3>
-                </div>
-
-                <div class="mb-3">
-                  <div class="d-flex justify-content-between mb-1">
-                    <span>HTML/CSS</span>
-                    <span>90%</span>
-                  </div>
-                  <div class="progress" style="height: 6px">
-                    <div
-                      class="progress-bar bg-primary"
-                      style="width: 90%"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <div class="d-flex justify-content-between mb-1">
-                    <span>JavaScript</span>
-                    <span>85%</span>
-                  </div>
-                  <div class="progress" style="height: 6px">
-                    <div
-                      class="progress-bar bg-primary"
-                      style="width: 85%"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <div class="d-flex justify-content-between mb-1">
-                    <span>React</span>
-                    <span>80%</span>
-                  </div>
-                  <div class="progress" style="height: 6px">
-                    <div
-                      class="progress-bar bg-primary"
-                      style="width: 80%"
-                    ></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="d-flex justify-content-between mb-1">
-                    <span>Angular</span>
-                    <span>70%</span>
-                  </div>
-                  <div class="progress" style="height: 6px">
-                    <div
-                      class="progress-bar bg-primary"
-                      style="width: 70%"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Backend -->
-          <div class="col-md-4">
-            <div class="card h-100 bg-dark text-white border-secondary">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-4">
-                  <div
-                    class="bg-info bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
-                    style="width: 60px; height: 60px"
-                  >
-                    <i class="bi bi-server text-info fs-3"></i>
-                  </div>
-                  <h3 class="h4 mb-0">Backend</h3>
+                  <h3 class="h4 mb-0">Programação</h3>
                 </div>
 
                 <div class="mb-3">
@@ -362,54 +301,136 @@
 
                 <div class="mb-3">
                   <div class="d-flex justify-content-between mb-1">
-                    <span>Node.js</span>
-                    <span>70%</span>
+                    <span>AutoLISP</span>
+                    <span>85%</span>
                   </div>
                   <div class="progress" style="height: 6px">
-                    <div class="progress-bar bg-info" style="width: 70%"></div>
+                    <div class="progress-bar bg-info" style="width: 85%"></div>
                   </div>
                 </div>
 
                 <div class="mb-3">
                   <div class="d-flex justify-content-between mb-1">
-                    <span>Java</span>
-                    <span>65%</span>
-                  </div>
-                  <div class="progress" style="height: 6px">
-                    <div class="progress-bar bg-info" style="width: 65%"></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="d-flex justify-content-between mb-1">
-                    <span>SQL</span>
+                    <span>Dynamo</span>
                     <span>80%</span>
                   </div>
                   <div class="progress" style="height: 6px">
                     <div class="progress-bar bg-info" style="width: 80%"></div>
                   </div>
                 </div>
+
+                <div>
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Pandas/NumPy</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress" style="height: 6px">
+                    <div class="progress-bar bg-info" style="width: 90%"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- DevOps -->
-          <div class="col-md-4">
+          <!-- CAD & BIM -->
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100 bg-dark text-white border-secondary">
               <div class="card-body p-4">
                 <div class="d-flex align-items-center mb-4">
                   <div
-                    class="bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
-                    style="width: 60px; height: 60px"
+                    class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                    style="width: 60px; height: 60px; min-width: 60px"
                   >
-                    <i class="bi bi-gear text-success fs-3"></i>
+                    <i class="bi bi-layers text-primary fs-3"></i>
                   </div>
-                  <h3 class="h4 mb-0">DevOps</h3>
+                  <h3 class="h4 mb-0">CAD & BIM</h3>
                 </div>
 
                 <div class="mb-3">
                   <div class="d-flex justify-content-between mb-1">
-                    <span>Git</span>
+                    <span>AutoCAD</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress" style="height: 6px">
+                    <div
+                      class="progress-bar bg-primary"
+                      style="width: 90%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Civil 3D</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress" style="height: 6px">
+                    <div
+                      class="progress-bar bg-primary"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Revit</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress" style="height: 6px">
+                    <div
+                      class="progress-bar bg-primary"
+                      style="width: 75%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Clash Detection</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress" style="height: 6px">
+                    <div
+                      class="progress-bar bg-primary"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Automação & Análise de Dados -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 bg-dark text-white border-secondary">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-4">
+                  <div
+                    class="bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                    style="width: 60px; height: 60px; min-width: 60px"
+                  >
+                    <i class="bi bi-robot text-success fs-3"></i>
+                  </div>
+                  <h3 class="h4 mb-0">Automação & Dados</h3>
+                </div>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Extração de PDF</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress" style="height: 6px">
+                    <div
+                      class="progress-bar bg-success"
+                      style="width: 95%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Processamento de Texto</span>
                     <span>90%</span>
                   </div>
                   <div class="progress" style="height: 6px">
@@ -422,39 +443,26 @@
 
                 <div class="mb-3">
                   <div class="d-flex justify-content-between mb-1">
-                    <span>Automação</span>
-                    <span>92%</span>
+                    <span>Geração de Relatórios</span>
+                    <span>85%</span>
                   </div>
                   <div class="progress" style="height: 6px">
                     <div
                       class="progress-bar bg-success"
-                      style="width: 92%"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <div class="d-flex justify-content-between mb-1">
-                    <span>Docker</span>
-                    <span>70%</span>
-                  </div>
-                  <div class="progress" style="height: 6px">
-                    <div
-                      class="progress-bar bg-success"
-                      style="width: 70%"
+                      style="width: 85%"
                     ></div>
                   </div>
                 </div>
 
                 <div>
                   <div class="d-flex justify-content-between mb-1">
-                    <span>AWS</span>
-                    <span>65%</span>
+                    <span>Visualização de Dados</span>
+                    <span>80%</span>
                   </div>
                   <div class="progress" style="height: 6px">
                     <div
                       class="progress-bar bg-success"
-                      style="width: 65%"
+                      style="width: 80%"
                     ></div>
                   </div>
                 </div>
@@ -465,7 +473,7 @@
       </div>
     </section>
 
-    <!-- Projetos Section -->
+    <!--  Projetos recentes -->
     <section id="projetos" class="py-5 bg-light text-dark">
       <div class="container py-5">
         <div class="row justify-content-center mb-5">
@@ -485,11 +493,11 @@
         </div>
 
         <div class="row g-4">
-          <!-- Projeto 1 -->
+          <!-- Projeto 1: Processador de Planilhas -->
           <div class="col-lg-4 col-md-6">
             <div class="card h-100 shadow-sm border-0 transition-transform">
               <img
-                src="projeto1.jpg"
+                src="images/planilha.jpg"
                 alt="Processamento de Planilhas"
                 class="card-img-top"
                 style="height: 200px; object-fit: cover"
@@ -529,11 +537,11 @@
             </div>
           </div>
 
-          <!-- Projeto 2 -->
+          <!-- Projeto 2: Clash Detection Tool -->
           <div class="col-lg-4 col-md-6">
             <div class="card h-100 shadow-sm border-0 transition-transform">
               <img
-                src="projeto2.jpg"
+                src="images/clash.jpeg"
                 alt="Clash Detection Tool"
                 class="card-img-top"
                 style="height: 200px; object-fit: cover"
@@ -574,11 +582,11 @@
             </div>
           </div>
 
-          <!-- Projeto 3 -->
+          <!-- Projeto 3: Gerador de Cercas -->
           <div class="col-lg-4 col-md-6">
             <div class="card h-100 shadow-sm border-0 transition-transform">
               <img
-                src="projeto3.jpg"
+                src="images/dynamo.png"
                 alt="Gerador de Cercas"
                 class="card-img-top"
                 style="height: 200px; object-fit: cover"
@@ -621,7 +629,7 @@
       </div>
     </section>
 
-    <!-- Contato Section -->
+    <!-- Formulário de contato -->
     <section id="contato" class="py-5 bg-dark text-white">
       <div class="container py-5">
         <div class="row justify-content-center mb-5">
@@ -636,7 +644,10 @@
                 background-color: #0d6efd;
               "
             />
-            <p class="mt-3">Vamos conversar sobre seu próximo projeto!</p>
+            <p class="mt-3">
+              Precisa de soluções de automação para engenharia ou processamento
+              de dados? Vamos conversar!
+            </p>
           </div>
         </div>
 
@@ -656,9 +667,9 @@
                   <div>
                     <p class="mb-0 text-secondary">Email</p>
                     <a
-                      href="mailto:seuemail@exemplo.com"
+                      href="mailto:ian.matsushita@exemplo.com"
                       class="text-decoration-none fs-5"
-                      >seuemail@exemplo.com</a
+                      >ian.matsushita@exemplo.com</a
                     >
                   </div>
                 </div>
@@ -673,7 +684,7 @@
                   <div>
                     <p class="mb-0 text-secondary">LinkedIn</p>
                     <a href="#" class="text-decoration-none fs-5"
-                      >linkedin.com/seu-perfil</a
+                      >linkedin.com/in/ian-matsushita</a
                     >
                   </div>
                 </div>
@@ -688,7 +699,7 @@
                   <div>
                     <p class="mb-0 text-secondary">GitHub</p>
                     <a href="#" class="text-decoration-none fs-5"
-                      >github.com/seu-usuario</a
+                      >github.com/ian-matsushita</a
                     >
                   </div>
                 </div>
@@ -722,7 +733,7 @@
                           type="text"
                           class="form-control bg-dark bg-opacity-50 border-secondary text-white"
                           id="nome"
-                          placeholder="Seu nome"
+                          placeholder="Ian Junji"
                         />
                       </div>
                     </div>
@@ -770,7 +781,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Rodapé com links e copyright -->
     <footer
       class="py-4 bg-dark text-white border-top border-secondary border-opacity-25"
     >
@@ -778,7 +789,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
             <a class="text-decoration-none text-white font-monospace" href="#">
-              &lt;devSeuNome /&gt;
+              &lt;devIan/&gt;
             </a>
           </div>
           <div class="col-md-6 text-center text-md-end">
@@ -803,7 +814,7 @@
         <hr class="my-4 bg-secondary" style="opacity: 0.1" />
         <div class="text-center">
           <p class="mb-0">
-            © 2024 <span class="font-monospace">Seu Nome</span>. Todos os
+            © 2024 <span class="font-monospace">Ian Junji</span>. Todos os
             direitos reservados.
           </p>
         </div>
