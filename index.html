@@ -44,7 +44,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-2">
               <a
-                class="nav-link active border-bottom border-primary border-2"
+                class="nav-link active"
                 href="#inicio"
                 >Início</a
               >
@@ -844,6 +844,61 @@
             card.style.borderColor = "";
           });
         });
+      });
+    </script>
+
+    <!-- Script para atualizar o underline da navbar -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const sections = document.querySelectorAll("section[id]");
+        
+        // Função para atualizar o link ativo na navbar
+        function updateActiveNavLink() {
+          // Remover classes ativas e bordas de todos os links
+          navLinks.forEach(link => {
+            link.classList.remove("active", "border-bottom", "border-primary", "border-2");
+          });
+          
+          // Encontrar a seção atual com base na posição de rolagem
+          let currentSection = "";
+          let scrollPosition = window.scrollY;
+          
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.offsetHeight;
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+              currentSection = section.getAttribute("id");
+            }
+          });
+          
+          // Adicionar classes ativas e bordas ao link correspondente
+          if (currentSection) {
+            const activeLink = document.querySelector(`.navbar-nav .nav-link[href="#${currentSection}"]`);
+            if (activeLink) {
+              activeLink.classList.add("active", "border-bottom", "border-primary", "border-2");
+            }
+          }
+        }
+        
+        // Evento de clique para os links da navbar
+        navLinks.forEach(link => {
+          link.addEventListener("click", function(e) {
+            // Remover classes ativas e bordas de todos os links
+            navLinks.forEach(navLink => {
+              navLink.classList.remove("active", "border-bottom", "border-primary", "border-2");
+            });
+            
+            // Adicionar classes ativas e bordas ao link clicado
+            this.classList.add("active", "border-bottom", "border-primary", "border-2");
+          });
+        });
+        
+        // Atualizar o link ativo ao rolar a página
+        window.addEventListener("scroll", updateActiveNavLink);
+        
+        // Inicializar o link ativo
+        updateActiveNavLink();
       });
     </script>
   </body>
