@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Tags meta necessárias pra página não bugar -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- CSS do Bootstrap -->
+    <!-- BOOTSTRAP CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- Ícones do Bootstrap -->
+    <!-- icones bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
 
-    <!-- Fontes do Google -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
     <title>Meu Portfólio</title>
   </head>
   <body class="bg-dark text-light">
-    <!-- Barra de navegação top -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-90"
-    >
+    <!-- nav começa aqui -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
       <div class="container">
-        <a class="navbar-brand font-monospace" href="#"> &lt;devIan/&gt; </a>
+        <a class="navbar-brand" href="#"> &lt;devIan/&gt; </a>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -43,11 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-2">
-              <a
-                class="nav-link active"
-                href="#inicio"
-                >Início</a
-              >
+              <a class="nav-link active" href="#inicio">Início</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#sobre">Sobre</a>
@@ -67,8 +53,9 @@
         </div>
       </div>
     </nav>
+    <!-- fim da nav -->
 
-    <!-- Parte principal da página com minha foto -->
+    <!-- PARTE PRINCIPAL DO SITE -->
     <section
       id="inicio"
       class="min-vh-100 d-flex align-items-center bg-dark text-white"
@@ -96,30 +83,29 @@
                     class="bg-success rounded-circle"
                     style="width: 15px; height: 15px"
                   ></div>
-                  <p class="ms-3 mb-0 font-monospace text-secondary">
-                    user@portfolio: ~ $
-                  </p>
+                  <p class="ms-3 mb-0 text-secondary">user@portfolio: ~ $</p>
                 </div>
                 <div class="text-center">
                   <img
-                    src="sua-foto.jpg"
+                    src="images/eu.jpg"
                     alt="Ian Junji"
                     class="img-fluid border border-primary rounded-circle"
-                    style="width: 180px; height: 180px; object-fit: cover"
+                    style="
+                      width: 200px;
+                      height: 200px;
+                      object-fit: cover;
+                      border-color: blue !important;
+                    "
                   />
                 </div>
-                <p class="font-monospace mt-3 mb-0 text-success">
-                  &gt; Carregando perfil...
-                </p>
+                <p class="mt-3 mb-0 text-success">&gt; Carregando perfil...</p>
               </div>
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
-            <span class="badge bg-dark px-3 py-2 font-monospace"
-              >Olá, mundo! 👋</span
-            >
+            <span class="badge bg-dark px-3 py-2">Olá, mundo! 👋</span>
             <h1 class="display-3 fw-bold">
-              Eu sou <span class="text-primary">Ian Junji</span>
+              Me chamo <span class="text-primary">Ian Junji</span>
             </h1>
             <h2 class="h3 mb-4 text-secondary">
               Desenvolvedor Backend & Automação
@@ -129,14 +115,16 @@
               desenvolvimento de ferramentas para engenharia civil.
             </p>
             <div class="d-flex flex-wrap gap-3">
-              <a
-                href="#projetos"
-                class="btn btn-primary d-inline-flex align-items-center"
-                role="button"
-              >
-                <i class="bi bi-code-slash me-2" aria-hidden="true"></i>Meus
-                Projetos
-              </a>
+              <div>
+                <div>
+                  <a href="#projetos" class="btn btn-primary">
+                    <div>
+                      <i class="bi bi-code-slash me-2"></i>
+                      <div>Meus Projetos</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
               <a
                 href="#contato"
                 class="btn btn-outline-light d-flex align-items-center"
@@ -255,7 +243,7 @@
       </div>
     </section>
 
-    <!-- Habilidades de programador backend -->
+    <!-- MINHAS HABILIDADES -->
     <section id="habilidades" class="py-5 bg-dark text-white">
       <div class="container py-5">
         <div class="row justify-content-center mb-5">
@@ -295,7 +283,10 @@
                     <span>95%</span>
                   </div>
                   <div class="progress" style="height: 6px">
-                    <div class="progress-bar bg-info" style="width: 95%"></div>
+                    <div
+                      class="progress-bar bg-info"
+                      style="width: 95%; background-color: #0dcaf0"
+                    ></div>
                   </div>
                 </div>
 
@@ -473,12 +464,12 @@
       </div>
     </section>
 
-    <!--  Projetos recentes -->
+    <!--  projetos recentes -->
     <section id="projetos" class="py-5 bg-light text-dark">
       <div class="container py-5">
         <div class="row justify-content-center mb-5">
           <div class="col-lg-6 text-center">
-            <h2 class="mb-2">Projetos Recentes</h2>
+            <h2 class="text-center mb-2">Projetos Recentes</h2>
             <hr
               class="mx-auto"
               style="
@@ -495,7 +486,7 @@
         <div class="row g-4">
           <!-- Projeto 1: Processador de Planilhas -->
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm border-0 transition-transform">
+            <div class="card h-100 shadow-sm border-0">
               <img
                 src="images/planilha.jpg"
                 alt="Processamento de Planilhas"
@@ -539,7 +530,7 @@
 
           <!-- Projeto 2: Clash Detection Tool -->
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm border-0 transition-transform">
+            <div class="card h-100 shadow-sm border-0">
               <img
                 src="images/clash.jpeg"
                 alt="Clash Detection Tool"
@@ -584,7 +575,7 @@
 
           <!-- Projeto 3: Gerador de Cercas -->
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100 shadow-sm border-0 transition-transform">
+            <div class="card h-100 shadow-sm border-0">
               <img
                 src="images/dynamo.png"
                 alt="Gerador de Cercas"
@@ -596,7 +587,7 @@
                   class="d-flex justify-content-between align-items-center mb-3"
                 >
                   <h3 class="h4 mb-0">Gerador de Cercas Civil 3D</h3>
-                  <span class="badge bg-success text-dark">BIM</span>
+                  <span class="badge bg-success">BIM</span>
                 </div>
                 <p class="card-text">
                   Script em Dynamo para Civil 3D que automatiza a criação de
@@ -669,7 +660,7 @@
                     <a
                       href="mailto:ian.matsushita@exemplo.com"
                       class="text-decoration-none fs-5"
-                      >ian.matsushita@exemplo.com</a
+                      >ian.matsushita@gmail.com</a
                     >
                   </div>
                 </div>
@@ -698,8 +689,10 @@
                   </div>
                   <div>
                     <p class="mb-0 text-secondary">GitHub</p>
-                    <a href="#" class="text-decoration-none fs-5"
-                      >github.com/ian-matsushita</a
+                    <a
+                      href="https://github.com/IanJunji"
+                      class="text-decoration-none fs-5"
+                      >github.com/IanJunji</a
                     >
                   </div>
                 </div>
@@ -781,14 +774,14 @@
       </div>
     </section>
 
-    <!-- Rodapé com links e copyright -->
+    <!-- rodape -->
     <footer
       class="py-4 bg-dark text-white border-top border-secondary border-opacity-25"
     >
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <a class="text-decoration-none text-white font-monospace" href="#">
+            <a class="text-decoration-none text-white" href="#">
               &lt;devIan/&gt;
             </a>
           </div>
@@ -799,14 +792,8 @@
               <a href="#" class="text-light fs-5"
                 ><i class="bi bi-linkedin"></i
               ></a>
-              <a href="#" class="text-light fs-5"
+              <a href="https://github.com/IanJunji" class="text-light fs-5"
                 ><i class="bi bi-github"></i
-              ></a>
-              <a href="#" class="text-light fs-5"
-                ><i class="bi bi-twitter-x"></i
-              ></a>
-              <a href="#" class="text-light fs-5"
-                ><i class="bi bi-instagram"></i
               ></a>
             </div>
           </div>
@@ -814,92 +801,13 @@
         <hr class="my-4 bg-secondary" style="opacity: 0.1" />
         <div class="text-center">
           <p class="mb-0">
-            © 2024 <span class="font-monospace">Ian Junji</span>. Todos os
-            direitos reservados.
+            © 2024 <span>Ian Junji</span>. Todos os direitos reservados.
           </p>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Animação para os cards -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Adicionar classe hover nos cards de projeto para animação
-        const cards = document.querySelectorAll(".transition-transform");
-
-        cards.forEach((card) => {
-          card.addEventListener("mouseenter", () => {
-            card.style.transform = "translateY(-10px)";
-            card.style.boxShadow = "0 15px 35px rgba(0,0,0,0.3)";
-            card.style.transition = "all 0.3s ease";
-            card.style.borderColor = "#0d6efd";
-          });
-
-          card.addEventListener("mouseleave", () => {
-            card.style.transform = "translateY(0)";
-            card.style.boxShadow = "";
-            card.style.borderColor = "";
-          });
-        });
-      });
-    </script>
-
-    <!-- Script para atualizar o underline da navbar -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-        const sections = document.querySelectorAll("section[id]");
-        
-        // Função para atualizar o link ativo na navbar
-        function updateActiveNavLink() {
-          // Remover classes ativas e bordas de todos os links
-          navLinks.forEach(link => {
-            link.classList.remove("active", "border-bottom", "border-primary", "border-2");
-          });
-          
-          // Encontrar a seção atual com base na posição de rolagem
-          let currentSection = "";
-          let scrollPosition = window.scrollY;
-          
-          sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            const sectionHeight = section.offsetHeight;
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-              currentSection = section.getAttribute("id");
-            }
-          });
-          
-          // Adicionar classes ativas e bordas ao link correspondente
-          if (currentSection) {
-            const activeLink = document.querySelector(`.navbar-nav .nav-link[href="#${currentSection}"]`);
-            if (activeLink) {
-              activeLink.classList.add("active", "border-bottom", "border-primary", "border-2");
-            }
-          }
-        }
-        
-        // Evento de clique para os links da navbar
-        navLinks.forEach(link => {
-          link.addEventListener("click", function(e) {
-            // Remover classes ativas e bordas de todos os links
-            navLinks.forEach(navLink => {
-              navLink.classList.remove("active", "border-bottom", "border-primary", "border-2");
-            });
-            
-            // Adicionar classes ativas e bordas ao link clicado
-            this.classList.add("active", "border-bottom", "border-primary", "border-2");
-          });
-        });
-        
-        // Atualizar o link ativo ao rolar a página
-        window.addEventListener("scroll", updateActiveNavLink);
-        
-        // Inicializar o link ativo
-        updateActiveNavLink();
-      });
-    </script>
   </body>
 </html>
